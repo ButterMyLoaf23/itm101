@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A simple calculator that adds two numbers." />
+  <title>Add Two Numbers</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="mathbostonwyatt.js" defer></script>
+</head>
+<body>
+  <main>
+    <p class="eyebrow">A little arithmetic</p>
+    <h1>Add two numbers</h1>
+    <p class="intro">Enter two values and find their sum.</p>
+
+    <form id="addition-form">
+      <label for="first-number">
+        First number
+        <input id="first-number" name="firstNumber" type="number" step="any" required />
+      </label>
+      <label for="second-number">
+        Second number
+        <input id="second-number" name="secondNumber" type="number" step="any" required />
+      </label>
+      <button type="submit">Add numbers</button>
+    </form>
+
+    <p id="result" aria-live="polite"></p>
+  </main>
+</body>
+</html>
