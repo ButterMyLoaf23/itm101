@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ClearView</title>
+  <link rel="stylesheet" href="../css/popup.css" />
+</head>
+<body>
+  <main class="popup">
+    <header class="brand-row">
+      <div class="brand-icon">✦</div>
+      <div>
+        <h1>ClearView</h1>
+        <p>Ad blocker</p>
+      </div>
+      <span class="status-dot" id="statusDot" aria-label="Blocker status"></span>
+    </header>
+
+    <section class="site-card">
+      <div>
+        <span class="eyebrow">Current website</span>
+        <strong id="siteName">Loading...</strong>
+      </div>
+      <label class="switch" aria-label="Toggle ad blocking for this website">
+        <input id="enabledToggle" type="checkbox" checked />
+        <span class="slider"></span>
+      </label>
+    </section>
+
+    <section class="stats" aria-label="Blocking statistics">
+      <div><strong id="blockedCount">0</strong><span>Blocked on this page</span></div>
+      <div><strong id="totalCount">0</strong><span>Blocked this session</span></div>
+    </section>
+
+    <p class="message" id="message">ClearView is protecting this page.</p>
+    <button class="secondary-button" id="refreshButton" type="button">Refresh page</button>
+    <footer>Built as a JavaScript extension project.</footer>
+  </main>
+  <script src="../js/popup.js"></script>
+</body>
+</html>
